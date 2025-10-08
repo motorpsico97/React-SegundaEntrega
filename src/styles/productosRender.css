@@ -1,0 +1,28 @@
+.container-producto{
+    padding: 12px;
+    margin: 5rem;
+    display: flex;
+    flex-direction: column
+}
+.info-producto{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    font-size: 1.2rem;  
+}
+.detalles-producto{
+    margin-left: 5rem;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.detalles-producto .info-precio{
+    font-weight: bold;
+    font-size: 1.5rem;  
+}
+.container-producto .info-talles p{
+    gap: 5px;
+}

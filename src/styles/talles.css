@@ -1,0 +1,39 @@
+.talles-container {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 8px;
+}
+
+.talle {
+    border: 1px solid #ddd;
+    background: #fff;
+    color: #222;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: transform .08s ease, box-shadow .08s ease;
+    min-width: 44px;
+    text-align: center;
+}
+
+.talle:hover:not(.talle--no-disponible) {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+}
+
+.talle--seleccionado {
+    background: rgb(240, 140, 0);
+    color: white;
+    border-color: rgb(0, 0, 0);
+    box-shadow: 0 6px 14px rgba(11, 119, 102, 0.18);
+}
+
+.talle--no-disponible {
+    background: #f6f6f6;
+    color: #999;
+    border-color: #eee;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
