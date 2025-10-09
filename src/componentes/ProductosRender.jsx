@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import productos from '../data/productos.json'
 import ImageGallery from './ImageGallery'
-import '../styles/ProductosRender.css'
+import '../styles/productosRender.css'
 import Talles from '../componentes/Talles'
 
 
