@@ -10,7 +10,6 @@ const Home = () => {
 	const { categoryId, marca, genero } = useParams()
 
 
-	// promesa simulada que resuelve los productos después de 2 segundos
 	const fetchProductosSimulado = (categoria) => {
 		return new Promise((resolve) => {
 			setTimeout(() => {
@@ -63,8 +62,6 @@ const Home = () => {
 
 
 	
-
-	// título dinámico según la ruta (marca > categoría > por defecto)
 	const titulo = genero ? decodeURIComponent(genero) : (marca ? decodeURIComponent(marca) : (categoryId ? decodeURIComponent(categoryId) : 'Productos'))
 
 	return (

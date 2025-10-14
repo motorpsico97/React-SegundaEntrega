@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import '../styles/imagegallery.css'
 
+
 const ImageGallery = ({ images = null, imagenes = null }) => {
     const lista = Array.isArray(imagenes) ? imagenes : (Array.isArray(images) ? images : [])
     const [indice, setIndice] = useState(0)

@@ -5,6 +5,7 @@ import { ProductosRender } from './componentes/ProductosRender'
 import NavBar from './componentes/NavBar'
 import Footer from './componentes/Footer'
 
+
 function App() {
 	return (
 		<>
