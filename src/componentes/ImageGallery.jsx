@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import '../styles/imagegallery.css'
+import '../../src/styles/imagegallery.css'
 
 
 const ImageGallery = ({ images = null, imagenes = null }) => {
@@ -34,9 +34,7 @@ const ImageGallery = ({ images = null, imagenes = null }) => {
                     <img
                         src={lista[indice]}
                         alt={`Imagen ${indice + 1}`}
-                        className="ig-main"
-                        onError={(e) => { e.currentTarget.src = '/imagenes/placeholder.png' }}
-                    />
+                        className="ig-main"/>
                 </div>
                 <button className="ig-btn ig-next" onClick={siguiente} aria-label="Siguiente">▶</button>
             </div>
@@ -50,7 +48,7 @@ const ImageGallery = ({ images = null, imagenes = null }) => {
                         aria-label={`Ver imagen ${i + 1}`}
                         role="listitem"
                     >
-                        <img src={url} alt={`mini-${i + 1}`} loading="lazy" onError={(e) => { e.currentTarget.src = '/imagenes/placeholder-small.png' }} />
+                        <img src={url} alt={`mini-${i + 1}`} loading="lazy" />
                     </button>
                 ))}
             </div>
