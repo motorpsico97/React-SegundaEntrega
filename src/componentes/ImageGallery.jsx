@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import '../../src/styles/imagegallery.css'
+import '../styles/gallery.css'
 
 
 const ImageGallery = ({ images = null, imagenes = null }) => {
