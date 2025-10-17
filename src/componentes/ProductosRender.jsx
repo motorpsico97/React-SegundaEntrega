@@ -2,7 +2,6 @@
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import productos from '../data/productos.json'
-import ImageGallery from './ImageGallery'
 
 import Talles from './Talles'
 import '../styles/productosRender.css'
@@ -22,8 +21,8 @@ export const ProductosRender = () => {
 		<main className='container-producto'>
 			<h1> {item.nombre} </h1>
 			<article className='info-producto'>
-				<ImageGallery images={item.galeria} />
 				<div className='detalles-producto'>
+					<img src={item.img} alt={item.nombre} className='img-producto' />
 					<p className='info-categoria'>Categoría: {item.categoria}</p>
 					<p className='info-marca'>Marca: {item.marca}</p>
 					<p className='info-genero'>Género: {item.genero}</p>
